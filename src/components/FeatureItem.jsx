@@ -1,9 +1,10 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import DotGray from '../assets/icons/Ellipse11.png'
 
 const FeatureItem = ({ img }) => {
   return (
-    <div className='w-[267px] cursor-pointer'>
+    <Link to={'/details'} className='w-[267px] cursor-pointer'>
       <img src={img} alt='' className='rounded-[15px] w-full h-[202px]' />
       <div>
         <div className='bg-[#F3EDFF] w-[91px] h-[26px] rounded-[10px] text-[#6B6B6B] font-[600] leading-4 text-[14px] px-[10px] py-[4px]'>
@@ -18,7 +19,7 @@ const FeatureItem = ({ img }) => {
           <span>Binh dep trai</span>
         </div>
       </div>
-    </div>
+    </Link>
   )
 }
 

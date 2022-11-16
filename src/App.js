@@ -5,6 +5,7 @@ import Blog from './pages/Blog'
 import Login from './pages/Login'
 import Contact from './pages/Contact'
 import Register from './pages/Register'
+import Details from './pages/Details'
 function App() {
   return (
     <BrowserRouter>
@@ -14,6 +15,7 @@ function App() {
         <Route path='/contact' element={<Contact />} />
         <Route path='/login' element={<Login />} />
         <Route path='/register' element={<Register />} />
+        <Route path='/details' element={<Details />} />
       </Routes>
     </BrowserRouter>
   )
