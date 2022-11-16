@@ -6,6 +6,8 @@ import Login from './pages/Login'
 import Contact from './pages/Contact'
 import Register from './pages/Register'
 import Details from './pages/Details'
+import Create from './pages/Create'
+
 function App() {
   return (
     <BrowserRouter>
@@ -16,6 +18,7 @@ function App() {
         <Route path='/login' element={<Login />} />
         <Route path='/register' element={<Register />} />
         <Route path='/details' element={<Details />} />
+        <Route path='/create' element={<Create />} />
       </Routes>
     </BrowserRouter>
   )

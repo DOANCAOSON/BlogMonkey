@@ -13,6 +13,7 @@ import Pic7 from '../assets/images/pic7.png'
 import Pic8 from '../assets/images/pic8.png'
 import DotGray from '../assets/icons/Ellipse11.png'
 import FeatureItem from '../components/FeatureItem'
+import { Link } from 'react-router-dom'
 
 const Home = () => {
   return (
@@ -27,7 +28,9 @@ const Home = () => {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
             dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.
           </p>
-          <Button banner={true}>Get Started</Button>
+          <Button banner={true}>
+            <Link to='/create'>Get Started</Link>
+          </Button>
         </div>
         <div>
           <img src={Illustration} alt='' className='w-[508.12px] h-[414.71px]' />
